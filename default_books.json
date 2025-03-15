@@ -1,0 +1,112 @@
+[
+  {
+    "model": "library.book",
+    "pk": 1,
+    "fields": {
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "isbn": "978-0143039433",
+      "page_count": 464,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+      "title": "East of Eden",
+      "author": "John Steinbeck",
+      "isbn": "978-0142000656",
+      "page_count": 601,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 3,
+    "fields": {
+      "title": "Of Mice and Men",
+      "author": "John Steinbeck",
+      "isbn": "978-0140177398",
+      "page_count": 107,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 4,
+    "fields": {
+      "title": "Cannery Row",
+      "author": "John Steinbeck",
+      "isbn": "978-0140187373",
+      "page_count": 208,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 5,
+    "fields": {
+      "title": "The Winter of Our Discontent",
+      "author": "John Steinbeck",
+      "isbn": "978-0140187533",
+      "page_count": 288,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 6,
+    "fields": {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "978-0143058144",
+      "page_count": 671,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 7,
+    "fields": {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "978-0374528379",
+      "page_count": 796,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 8,
+    "fields": {
+      "title": "The Idiot",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "978-0140447927",
+      "page_count": 656,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 9,
+    "fields": {
+      "title": "Demons",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "978-0141441412",
+      "page_count": 768,
+      "availability": true
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 10,
+    "fields": {
+      "title": "Notes from Underground",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "978-0486270531",
+      "page_count": 136,
+      "availability": true
+    }
+  }
+]
