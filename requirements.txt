@@ -6,3 +6,4 @@ psycopg2
 pytest==6.2
 pytest-django==4.5
 coverage==6.0
+gunicorn
