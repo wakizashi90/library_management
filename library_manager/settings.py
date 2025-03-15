@@ -5,6 +5,8 @@ import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 SECRET_KEY = os.environ.get('SECRET_KEY', 'secret_key_for_development')
 
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
