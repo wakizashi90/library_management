@@ -14,8 +14,6 @@ python manage.py migrate
 
 python << END
 import os
-
-# Set DJANGO_SETTINGS_MODULE manually so django.setup() knows which settings to load:
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'library_manager.settings')
 
 import django
