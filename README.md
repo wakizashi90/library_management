@@ -55,51 +55,53 @@ A Django REST API for managing a library. Users can register, log in (with JWT),
 
 1. Clone the Repo
 <pre>
-```bash
 git clone https://github.com/wakizashi90/library_management.git
-```
 </pre>
 2. Create & activate virtual environment (.venv)
 
+<pre>
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate  # Windows
+</pre>
 
 3. Install requirements.txt
-
+<pre>
 pip install -r requirements.txt
+</pre>
 4. Set up PostgreSQL locally
 5. Apply migrations
-
+<pre>
 python manage.py makemigrations
 python manage.py migrate
-
+</pre>
 6. Create a superuser
-
+<pre>
 python manage.py createsuperuser
-
+</pre>
 7. Run the server
 python manage.py runserver
 
 ## Docker & Docker Compose
 1. Build and run with Docker Compose:
-
+<pre>
 docker-compose up --build
+</pre>
 2. Go to http://127.0.0.1:8000 OR http://127.0.0.1:8000/swagger/ to see the swagger docs locally
 3. To run migrations inside Docker
-
+<pre>
 docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
-
+</pre>
 ## Heroku deployment
 1. heroku addons:create heroku-postgresql:hobby-dev --app <APP_NAME>
 2. heroku run python manage.py migrate --app <APP_NAME>
 heroku run python manage.py createsuperuser --app <APP_NAME>
 
 Running tests using Docker:
-
+<pre>
 docker-compose exec web python manage.py test
-
+</pre>
 
 ## Swagger Documentation
 
@@ -109,12 +111,17 @@ Once running locally on port 8000, open:
 
 You can try out endpoints. For secured endpoints, you must first log in with:
 
+**Endpoint:**
 POST /auth/login
 
+**Request body:**
+
+```json
 {
   "username": "testuser",
   "password": "testpass"
 }
+```
 
 Then copy the "access" token and click Authorize in Swagger with:
 
