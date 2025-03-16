@@ -2,7 +2,7 @@ Library Management System
 
 A Django REST API for managing a library. Users can register, log in (with JWT), search and borrow books, return them, and see a basic admin panel for management.
 
-Features:
+## Features:
 1. User roles:
 - Anonymous: Browse books (read-only).
 - Registered: Search and borrow books.
@@ -26,7 +26,7 @@ Features:
 
 ⸻
 
-Table of Contents:
+## Table of Contents:
 1. Requirements
 2. Quick start (local)
 3. Docker & Docker Compose
@@ -39,7 +39,7 @@ Table of Contents:
 
 ⸻
 
-Requirements:
+## Requirements:
 - Python 3.9+ (or the version specified in your Dockerfile)
 - PostgreSQL 13+ (local or Docker)
 - Django 3.2+
@@ -51,7 +51,7 @@ Requirements:
 
 ⸻
 
-Quick Start (local)
+## Quick Start (local)
 
 1. Clone the Repo
 
@@ -79,8 +79,8 @@ python manage.py createsuperuser
 7. Run the server
 python manage.py runserver
 
-Docker & Docker Compose
-1. Build and run with Docker Compose
+## Docker & Docker Compose
+1. Build and run with Docker Compose:
 
 docker-compose up --build
 2. Go to http://127.0.0.1:8000 OR http://127.0.0.1:8000/swagger/ to see the swagger docs locally
@@ -89,7 +89,7 @@ docker-compose up --build
 docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 
-Heroku deployment
+## Heroku deployment
 1. heroku addons:create heroku-postgresql:hobby-dev --app <APP_NAME>
 2. heroku run python manage.py migrate --app <APP_NAME>
 heroku run python manage.py createsuperuser --app <APP_NAME>
@@ -99,7 +99,7 @@ Running tests using Docker:
 docker-compose exec web python manage.py test
 
 
-Swagger Documentation
+## Swagger Documentation
 
 Once running locally on port 8000, open:
 	•	Swagger UI: http://127.0.0.1:8000/swagger/
@@ -108,6 +108,7 @@ Once running locally on port 8000, open:
 You can try out endpoints. For secured endpoints, you must first log in with:
 
 POST /auth/login
+
 {
   "username": "testuser",
   "password": "testpass"
@@ -117,14 +118,15 @@ Then copy the "access" token and click Authorize in Swagger with:
 
 Bearer <token_here>
 
-Security Notes & Bonus Points
+## Security Notes & Bonus Points
 
-- CSRF & XSS: By default, Django’s ORM and security middlewares mitigate common injection attacks. For truly robust security in production, use HTTPS and set SECURE_SSL_REDIRECT, CSRF_COOKIE_SECURE, etc.
-- SQL Injection: Avoided by using Django’s ORM.
-- Filtering & Pagination: Implemented for the BookViewSet, allowing search by title/author and pagination with DRF’s PageNumberPagination.
+- CSRF & XSS
+- SQL Injection
+- Filtering & Pagination: the BookViewSet allows searching by title/author and pagination with DRF’s PageNumberPagination
 
-Project structure:
+## Project Structure
 
+```text
 library_manager/
 ├─ library_manager/
 │   ├─ __init__.py
@@ -159,3 +161,5 @@ library_manager/
 ├─ runtime.txt or .python-version (for Heroku buildpack)
 ├─ Procfile (for Heroku, if using buildpacks)
 └─ README.md
+```
+
