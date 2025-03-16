@@ -18,11 +18,12 @@ A Django REST API for managing a library. Users can register, log in (with JWT),
 - GET /library/books to list books (with search/filter/pagination)
 - POST /loans to borrow a book (requires JWT)
 - PATCH /loans/{id} to return a book
-5. Pagination & Filtering: DRF’s built-in pagination, search, and ordering for books.
-6. Documentation: Auto-generated Swagger via drf-yasg.
-7. Testing: Unit/integration tests with Django’s test framework (or Pytest if you prefer).
-8. Docker: A Dockerfile for containerizing the app and a docker-compose.yml for local dev with PostgreSQL.
-9. Heroku Deployment: Steps to containerize and deploy with Heroku’s Container Registry or the buildpack approach, plus environment variables for Postgres.
+5. 10 books automatically added in the database upon spinning Docker Container
+6. Pagination & Filtering: DRF’s built-in pagination, search, and ordering for books.
+7. Documentation: Auto-generated Swagger via drf-yasg.
+8. Testing: Unit/integration tests with Django’s test framework (or Pytest if you prefer).
+9. Docker: A Dockerfile for containerizing the app and a docker-compose.yml for local dev with PostgreSQL.
+10. Heroku Deployment: Steps to containerize and deploy with Heroku’s Container Registry or the buildpack approach, plus environment variables for Postgres.
 
 ⸻
 
