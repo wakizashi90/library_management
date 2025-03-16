@@ -51,7 +51,7 @@ A Django REST API for managing a library. Users can register, log in (with JWT),
 
 ⸻
 
-## Quick Start (local)
+## Quick start (local using uvicorn)
 
 1. Clone the Repo
 <pre>
@@ -87,7 +87,7 @@ python manage.py runserver
 <pre>
 docker-compose up --build
 </pre>
-2. Go to http://127.0.0.1:8000 OR http://127.0.0.1:8000/swagger/ to see the swagger docs locally
+2. Go to http://127.0.0.1:8000/swagger/ to see the swagger docs locally
 3. To run migrations inside Docker
 <pre>
 docker-compose exec web python manage.py migrate
