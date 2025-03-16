@@ -99,7 +99,7 @@ docker-compose exec web python manage.py createsuperuser
 2. heroku run python manage.py migrate --app <APP_NAME>
 heroku run python manage.py createsuperuser --app <APP_NAME>
 
-Running tests using Docker:
+## Running tests using Docker:
 <pre>
 docker-compose exec web python manage.py test
 </pre>
