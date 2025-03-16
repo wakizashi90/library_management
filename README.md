@@ -54,9 +54,11 @@ A Django REST API for managing a library. Users can register, log in (with JWT),
 ## Quick Start (local)
 
 1. Clone the Repo
-
+<pre>
+```bash
 git clone https://github.com/wakizashi90/library_management.git
-
+```
+</pre>
 2. Create & activate virtual environment (.venv)
 
 python -m venv venv
